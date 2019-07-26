@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 30px;
+        height: 30px;
+        /* background: url('../相册/img/007.jpg'); */
+        background: rgba(255,0,0,.2)
+        
+    }
+    img{
+        position:relative;
+        top:-30px;
+        left: 30px;
+        display:none;
+    }
+    div:hover+img{
+        display:block;
+
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <img src="../images/ewm.jpg" alt="">
+    
+</body>
+</html>

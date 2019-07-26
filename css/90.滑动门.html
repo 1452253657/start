@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    *{
+        margin: 0;
+        padding: 0;   
+    }
+    div{
+        background: url('../images/weixin.png') no-repeat;
+    }
+    .left{
+        height: 33px;
+       /*  width: 16px; */
+       padding-left:16px;
+        background-position: 0 -144px; 
+        float:left;
+    }
+    .right{
+        height: 33px;
+       /*  width: 16px; */
+       padding-right: 16px;
+        background-position: right -144px; 
+        float:left;
+        color:#fff;
+    }
+   /*  .center{
+        float: left;
+        background-position:-16px -144px;
+        height: 33px;
+        color:#fff;
+    } */
+    .left:hover{
+        background-position:0 -192px;
+    }
+    .right:hover{
+        background-position:right -192px;
+    }
+    .left:hover+.right{
+        background-position:right -192px;
+    }
+   /*  .right:hover+.left{
+        ?????
+    } */
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="left"></div>
+   <!--  <div class="center">葫芦娃，快来救你家爷爷</div> -->
+    <div class="right">葫芦娃，快来救你家爷爷</div>
+</body>
+</html>

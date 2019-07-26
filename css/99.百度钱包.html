@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;      
+    }
+    .wallet{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        position:relative;
+        transition: all 2s;
+        transform-style: preserve-3d;
+
+    }
+    body{
+        background:hotpink;
+    }
+    .wallet::before,.wallet::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+       
+    }
+    .wallet::before{
+        background:url('../images/baidu.png') no-repeat right top;
+        transform:translateZ(0px);
+    }
+    .wallet::after{
+        background:url('../images/baidu.png') no-repeat left top;
+        transform:translateZ(1px);
+    }
+    .wallet:hover {
+        transform:rotateY(180deg);
+    }
+   /*  以上效果用两个盒子依然可以做出来 */
+
+    
+    </style>
+</head>
+<body>
+    <div class="wallet">
+
+    </div>
+    
+</body>
+</html>

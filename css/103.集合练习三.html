@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('../相册/img/008.jpg') no-repeat top center;
+        }
+
+        .box {
+            width: 100%;
+            height: 60px;
+            background: pink;
+            position: fixed;
+        }
+
+        .box2 {
+            /* float: left; */
+            /*  background: url('../相册/img/008.jpg') no-repeat; */
+            width: 1200px;
+            height: 400px;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+
+        .li img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 150px;
+            border-radius: 50%;
+        }
+
+        .box .li2 {
+            width: 220px;  
+            height: 40px;
+            position: absolute;
+            left: 210px;
+            font-size:30px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .li2 span{
+            display:inline-block;
+            margin: 0;
+            transition:  1s ease;  
+            color:#fff;
+        }
+        .box span:hover{
+        transform: translate(0,-10px);
+        cursor: pointer;
+        color: orange;
+        }
+        .box .a1,.box .a2  {
+            width: 110px;  
+            height: 40px;
+            position: absolute;
+            left: 480px;
+            font-size:15px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .box .a3{
+            height: 60px;
+            width: 60px;
+            right:120px;
+            position:absolute;
+            top:10px;
+            
+        }
+
+        .a1 a,.a2 a{
+            text-decoration: none;
+
+            color:#fff;
+        }
+        .box .a2 {
+            left:600px;
+        }
+
+        .box2 .li3{
+            width: 600px;  
+            height: 110px;
+            position: absolute;
+            left: 400px;
+            top:80px;
+            font-size:80px;
+            text-align: center;
+            line-height: 200px;
+            
+        }
+        .li3 span{
+            display:inline-block;
+            margin: 0;
+            transition:  1s ease;  
+            color:#fff;
+        }
+
+        .box2 span:hover{
+        transform: translate(0,-10px);
+        cursor: pointer;
+        color: orange;
+        }
+
+        .box3 {
+            width: 1200px;
+            height: 1000px;
+            border: 2px solid red;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="one li">
+            <img src="../images/bg1.jpg" alt="">
+        </div>
+         <div class="one li2" >
+              <span> a</span>
+              <span> c</span>
+              <span> e</span>
+              <span> B</span>
+              <span> u</span>
+              <span> d</span>
+              <span> d</span>
+              <span> y</span>
+         </div>
+       
+        <div class="one a1"> 
+            <img src="" alt="">
+            <a href="#target1">主页</a>
+        </div>
+        <div class="one a2">
+            <img src="" alt="">
+             <a href="https://www.baidu.com/">文章</a>
+            </div>
+            <div class="one a3">
+                <a href="https://www.baidu.com/">
+                <img src="../images/yinyue.png" alt=""></a>
+            </div>
+    </div>
+    <div class="box2" id="target1">
+            <div class="one li3" >
+                    <span> a</span>
+                    <span> c</span>
+                    <span> e</span>
+                    <span> B</span>
+                    <span> u</span>
+                    <span> d</span>
+                    <span> d</span>
+                    <span> y</span>
+               </div>
+    </div>
+    <div class="box3"> 
+      </div>
+
+  
+   
+</body> 
+</html>

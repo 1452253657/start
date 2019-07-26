@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav {
+            max-width: 540px;
+            min-width: 320px;
+            margin: 0 auto;
+
+
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        nav .row {
+            width: 100%;
+            height: 90px;
+            background: hotpink;
+            margin: 5px 0;
+            display: flex;
+
+        }
+
+        .row .row3 {
+            flex: 1;
+            
+        }
+
+        .row:nth-child(1) {
+            background: yellow;
+            border-radius: 10px;
+
+        }
+
+        .row:nth-child(2) {
+            background: skyblue;
+            border-radius: 10px;
+
+        }
+
+        .row:nth-child(3) {
+            background: yellowgreen;
+            border-radius: 10px;
+
+        }
+
+        .row:nth-child(4) {
+            background: orange;
+            border-radius: 10px;
+
+        }
+
+        .row .row3:nth-child(2) {
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+
+        }
+
+        .row .wa {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .wa a {
+            flex: 1;
+            text-align: center;
+            color: #fff;
+            line-height: 45px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .row .wa2 {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .wa2 a {
+            flex: 1;
+            text-align: center;
+            color: #fff;
+            line-height: 90px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+      
+        .wa a:nth-child(1) {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/ctrip.jpg" alt="">
+    </header>
+
+
+    <nav>
+        <div class="row">
+            <div class="row3 wa2">
+                <a href="#">葫芦娃</a>
+
+            </div>
+            <div class="row3 wa">
+                <a href="#">一娃</a>
+                <a href="#">二娃</a>
+            </div>
+            <div class="row3 wa">
+                <a href="#">三娃</a>
+                <a href="#">四娃</a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="row3 wa2">
+                        <a href="#">葫芦娃</a>
+                    </div>
+        
+            <div class="row3 wa">
+                <a href="#">一娃</a>
+                <a href="#">二娃</a>
+            </div>
+            <div class="row3 wa">
+                <a href="#">三娃</a>
+                <a href="#">四娃</a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="row3 wa2">
+                        <a href="#">葫芦娃</a>
+                    </div>
+        
+            <div class="row3 wa">
+                <a href="#">一娃</a>
+                <a href="#">二娃</a>
+            </div>
+            <div class="row3 wa">
+                <a href="#">三娃</a>
+                <a href="#">四娃</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="row3 wa">
+                    <a href="#">一娃</a>
+                    <a href="#">二娃</a>
+            </div>
+            <div class="row3 wa">
+                <a href="#">四娃</a>
+                <a href="#">五娃</a>
+            </div>
+            <div class="row3 wa">
+                <a href="#">六娃</a>
+                <a href="#">七娃</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 200px;
+        height: 40px;
+        border:1px solid red;
+        text-overflow:ellipsis; 
+       white-space:nowrap;
+        overflow:hidden;
+
+    }
+   /*  注意：如果需要实现一个文本超出盒子加上省略号的效果，我们使用text-overflow，
+    但是一定要配合：white-space:nowrap和overflow:hidden一起使用才能实现效果 */
+    </style>
+</head>
+<body>
+    <div>
+        葫芦娃们，你爷爷又被捉走了
+    </div>
+    
+</body>
+</html>

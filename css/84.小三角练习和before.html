@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+        .box{
+            position: relative;
+        } */
+
+        .box {
+            width: 200px;
+            height: 60px;
+            background: red;
+            left: 100px;
+            position: absolute;
+            box-shadow: 5px 5px rgba(0,0,0,.2);
+           /*  margin: 100px 40%; */
+        }
+        .two{
+            position: absolute;
+            border-left: 30px solid transparent;
+            border-top: 30px solid red;
+            border-right: 30px solid red;
+            border-bottom: 30px solid red;
+            left:-40px;
+            top:10px;
+            box-shadow: 5px 5px rgba(0,0,0,.2);
+
+        }
+        .three{
+            position: absolute;
+            border-left: 30px solid red;
+            border-top: 30px solid red;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid red;
+            left:180px;
+            top:10px;
+            box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+        }
+        .two::before{
+            content:'';
+            position: absolute;
+            border-left: 4px solid transparent;
+            border-top: 4px solid rgba(0,0,0,0.2);
+            border-right: 4px solid  rgba(0,0,0,0.2);
+            border-bottom: 4px solid transparent;
+           /*  background: black;
+            width: 20px;
+            height: 20px; */
+            left: 20px;
+            top:20px;
+        }
+        .three::before{
+            content:'';
+            position: absolute;
+            border-left: 4px solid rgba(0,0,0,0.2);
+            border-top: 4px solid rgba(0,0,0,0.2);
+            border-right: 4px solid  transparent;
+            border-bottom: 4px solid transparent;
+           /*  background: black;
+            width: 20px;
+            height: 20px; */
+            left: -30px;
+            top:20px;
+        }
+        /* 伪元素只有两个值在；before和after */
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <!-- <div class="one"></div -->
+        <div class="two"></div>
+        <div class="three"></div>
+
+    </div>
+
+
+
+</body>
+
+</html>

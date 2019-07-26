@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .father{
+                background: yellow;
+                /* height: 200px; */
+                /* overflow: hidden;  因为触发了BFC */
+            }
+            .one{
+                width: 200px;
+                height: 200px;
+                background: green;
+                float: left;
+            }
+            .two{
+                width: 200px;
+                height: 200px;
+                background: pink;
+                float: left;
+            }
+            .four{
+                width: 200px;
+                height: 200px;
+                background: red;
+                float: left;
+            }
+            .box{
+                height: 300px;
+                background: purple;
+            }
+            .five{
+                clear:both;
+                /* display: block; */
+            }
+            .clearfix::after{
+                content:".";
+                display: block;
+                clear:both;
+                visibility: hidden;
+                height:0;
+                line-height: 0;
+            }
+            .clearfix{
+                *zoom:1; 就是为了解决低版本的IE的清除浮动使用
+            }
+        </style>
+        <!-- 清除浮动的方式：
+            1.使用clear
+            2.有包含关系，给父元素加高度
+            3.给父盒子加overflow：hidden；
+            4.额外标签法
+            5.伪元素清除浮动(这是开发中最常用，这个必须记住，而且要手写出这段代码)
+             -->
+</head>
+<body>
+        <div class="father clearfix">
+                <!-- <span class="five"></span> -->
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="four">3</div>
+                <!-- <div class="five"></div>	 -->
+            </div>
+            <div class="box clearfix">
+                   
+            </div>
+            <div class="box clearfix"></div>
+            <div class="box clearfix"></div>
+            <div class="box clearfix"></div>
+            <div class="box clearfix"></div>
+</body>
+</html>

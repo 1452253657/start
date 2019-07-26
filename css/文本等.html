@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        div{
+                border: 1px solid red;
+                width: 300px;
+                height: 300px;
+                text-align: center;
+               /*  text-align:right; */
+              
+               
+        }
+     p{
+         font-size: 30px;
+         text-indent: 2em;  /* 首行缩进 */
+        /*  text-decoration: overline;  
+         text-decoration: line-through; */
+         text-decoration: underline;    
+     }
+      a{ 
+         text-decoration: none;
+     }
+    /*  以上为上中下三划线和取消划线 */
+     strong{
+         font-size: 30px;
+     }
+     
+    
+     a:link{
+         color: black;
+     }
+     a:visited{
+         color: black;
+     }
+     a:hover{
+         color: red;
+     }
+     a:active{
+         color: yellow;
+     }
+     
+    
+    </style>
+</head>
+<body>
+        <a href="#">坐上了火车去拉萨</a><br><br><br>
+    <div>
+            设置文本内容
+        
+    </div>
+   
+         <strong> text-align:水平对齐方式</strong><br>
+
+         <p>text-align属性用于设置文本内容的水平对齐，相当于html中的align对齐属性。其可用属性值如下：<br>
+        
+        
+                left：左对齐（默认值）<br>
+        
+                right：右对齐<br>
+                
+                center：居中对齐<br>
+      
+    </p>
+        
+     <strong>text-indent:首行缩进</strong><br>
+        
+     <p>text-indent属性用于设置首行文本的缩进，其属性值可为不同单位的数值、em字符宽度的倍数、或相对于浏览器窗口宽度的百分比%，允许使用负值, 建议使用em作为设置单位。
+            
+            1em 就是一个字的宽度   如果是汉字的段落， 1em 就是一个汉字的宽度</p>
+        
+     
+          <strong>
+                letter-spacing:字间距
+          </strong><br>
+        
+          <p> letter-spacing属性用于定义字间距，所谓字间距就是字符与字符之间的空白。其属性值可为不同单位的数值，允许使用负值，默认为normal。
+        
+      </p>
+       
+            <strong> word-spacing:单词间距</strong><br>
+        
+            <p> word-spacing属性用于定义英文单词之间的间距，对中文字符无效。和letter-spacing一样，其属性值可为不同单位的数值，允许使用负值，默认为normal。
+            
+            word-spacing和letter-spacing均可对英文进行设置。不同的是letter-spacing定义的为字母之间的间距，而word-spacing定义的为英文单词之间的间距。
+            
+       </p>
+    
+</body>
+</html>

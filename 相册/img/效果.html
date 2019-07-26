@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 200px;
+            height: 200px;
+            border: 1px solid springgreen;
+        }
+        /*伪类选择器，代表着元素处于一种什么样的状态*/
+        input:checked+.btn{
+            background-color: aquamarine;
+        }
+        /*鼠标悬停时的状态*/
+        .btn:hover{
+            background-color: lawngreen;
+
+        }
+        /*伪元素，帮我们在页面中用样式表创建的一个元素*/
+        .btn:after{
+            content: '一般般了';
+
+        }
+   </style>
+</head>
+<body>
+    <input type="text" 
+    ><br><br>
+    <input type="checkbox"name='btn'>
+    <div class="btn btn1"></div>
+    <input type="radio" name='btn'>
+    <div class="btn btn2"></div>
+    <input type="radio" name='btn'>
+    <div class="btn btn3"></div>
+    <input type="radio" name='btn'>
+    <div class="btn btn4"></div>
+    <input type="radio" name='btn'>
+    <div class="btn btn5"></div>
+    <input type="radio" name='btn'>
+    
+</body>
+</html>

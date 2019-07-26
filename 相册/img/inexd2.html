@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            background-image: url(../img/天空.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 100%;
+        }
+        
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            height: 100%;
+        }
+        
+        .img {
+            width: 400px;
+        }
+        
+        .info {
+            color: chartreuse;
+            font-size: 22px;
+        }
+        
+        .comments {
+            width: 800px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        
+        .text {
+            display: inline-block;
+            height: 200px;
+            vertical-align: top;
+        }
+        
+        .headimg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+        .photolist {
+            width: 800px;
+            display: block;
+            margin: 0 auto;
+            list-style: none;
+        }
+        
+        .photolist li {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        
+        .photolist li input {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            opacity: 0;
+        }
+        
+        .photolist li img {
+            width: 100%;
+        }
+        
+        .photolist li .mask {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        
+        .photolist li input:checked+.mask {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .photolist li .photo img {
+            width: 100%;
+        }
+        
+        .photolist li .photo {
+            position: absolute;
+            bottom: 0;
+            width: 0px;
+            text-align: center;
+            transition: all 1s;
+            opacity: 0;
+        }
+        
+        .photolist li input:checked~.photo {
+            opacity: 1;
+            width: 400px;
+            bottom: 150px;
+        }
+        
+        .over {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='content'>
+
+    </div>
+    <ul class='photolist'>
+        <!-- (li>img[src='img/0$.jpg']+input[type='radio' name='photo'])*6  -->
+        <li>
+            <div class='over'>
+                <img src="../img/001.jpg" alt=""></div><input type="radio" name="photo" checked>
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/001.jpg" alt="p站美图">
+                <p class='info'> p站美图</p>
+            </div>
+        </li>
+        <li>
+            <div class='over'><img src="../img/002.jpg" alt=""></div><input type="radio" name="photo">
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/002.jpg" alt="p站美图">
+                <p class='info'> p站美图</p>
+            </div>
+        </li>
+        <li>
+            <div class='over'><img src="../img/003.jpg" alt=""></div><input type="radio" name="photo">
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/003.jpg" alt="p站美图">
+                <p class='info'> gakki街头美拍</p>
+            </div>
+        </li>
+        <li>
+            <div class='over'><img src="../img/004.jpg" alt=""></div><input type="radio" name="photo">
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/004.jpg" alt="p站美图">
+                <p class='info'> p站美图</p>
+            </div>
+        </li>
+        <li>
+            <div class='over'><img src="../img/005.jpg" alt=""></div><input type="radio" name="photo">
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/005.jpg" alt="p站美图">
+                <p class='info'>p站美图</p>
+            </div>
+        </li>
+        <li>
+            <div class='over'><img src="../img/006.jpg" alt=""></div><input type="radio" name="photo">
+            <div class="mask"></div>
+            <div class='photo'>
+                <img class='img' src="../img/006.jpg" alt="p站美图">
+                <p class='info'> p站美图</p>
+            </div>
+        </li>`
+    </ul>
+    <div class="comments">
+        <div class="comment">
+            <img src="../img/008.jpg." alt="" class="headimg">
+            <div class="text">真的很有意境</div>
+        </div>
+    </div>
+</body>
+
+</html>

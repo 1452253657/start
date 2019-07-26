@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .oen {
+            background: forestgreen;
+            position: relative;
+
+        }
+
+        .two {
+            background: red;
+            position: relative;
+            top: -50px;
+            left: 50px;
+            z-index: 1;
+
+        }
+
+        .three {
+            background: hotpink;
+            position: relative;
+            top: -150px;
+            left: 150px;
+
+
+        }
+
+        /* 对于z-index只对非静态定位的元素起作用。
+        对于非静态定位的元素，后面的元素的层级高于前面的元素的层级
+        定位的元素的z-index都是：0；
+        */
+    </style>
+</head>
+
+<body>
+    <div class="oen"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+
+</body>
+
+</html>

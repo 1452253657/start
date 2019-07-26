@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        .father>p{
+            color: skyblue;
+        }
+        .son1>span{
+            color: red;
+        }
+      /*   这里的子 指的是 亲儿子  不包含孙子 重孙子之类。
+
+     比如：  .demo > h3 {color: red;}   说明  h3 一定是demo 亲儿子。  demo 元素包含着h3。
+     */
+
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>狗子</p>
+        <div class="son">
+            <p>二哈</p>
+            <div class="son1">
+                <p>二狗子</p>
+                <span>牧羊犬</span>
+            </div>
+           
+        </div>
+        <p>大狗</p>
+    </div>
+    <p>二狗蛋</p>
+
+    
+</body>
+</html>

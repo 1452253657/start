@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .one{
+        width: 600px;
+        height: 600px;
+        border-radius:10%;
+        margin: 0 auto;
+        background:url('../相册/img/003.jpg');
+        position: relative;
+        box-shadow: 5px 5px rgba(255,0,0,0.2);
+    }
+    .two,.three{
+        width: 40px;
+        height: 70px;
+       /*  border:1px solid purple; */
+        position: absolute;
+        top:50%;
+        margin-top:-35px;
+        background:url('./imgs/icon-slides.png');
+        opacity:0;
+    }
+    .two{
+        left:0;
+        background-position:0 0;   
+    }
+    .three{
+        right:0;
+        background-position:-42px 0;
+    }
+    .one:hover .two,.one:hover .three{
+        cursor:pointer;
+        opacity:1;
+
+    }
+    .two:hover{
+        background-position:82px 0;   
+    }
+    .three:hover{
+        background-position:-124px 0;   
+    }
+     
+
+
+
+
+
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    
+</body>
+</html>

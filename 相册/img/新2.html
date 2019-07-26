@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6)
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .header,
+        .footer {
+            width: 100%;
+            height: 50px;
+            background-color: #aaaaaa;
+            position: absolute;
+
+        }
+
+        .footer {
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .header {
+            top: 0px;
+            left: 0px;
+        }
+
+        .middle {
+            width: 100%;
+            overflow: hidden;
+            top: 50px;
+            bottom: 50px;
+            position: absolute;
+           
+        }
+
+        .left,
+        .right {
+            width: 50px;
+            height: 100%;
+            background: rgb(2, 255, 234);
+            position: absolute;
+        }
+
+        .left {
+            left: 0px;
+
+        }
+
+        .right {
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header"></div>
+        
+        <div class="middle">
+                <div class="left">left</div>
+                <div class="right">right</div>
+          
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque iste molestias doloribus, molestiae
+                eligendi amet porro dolorem quasi vero, a adipisci est inventore magni eius necessitatibus. Accusantium
+                voluptates quaerat cupiditate.
+                Natus nesciunt aliquam ex, eaque modi nihil! Maiores, molestiae iusto ratione quos autem maxime aut
+                error nisi qui asperiores debitis eos minima nobis nulla pariatur neque deserunt voluptatem excepturi
+                dolorem.
+                Ipsam ea consequuntur iure facilis, optio neque maxime itaque voluptates nisi! Quis, inventore
+                consequatur excepturi, dolor, distinctio facere quo a vel officiis iste ipsa veritatis consectetur
+                corrupti. Perferendis, unde officiis?
+                Assumenda perspiciatis repellendus officiis obcaecati quaerat, aliquid enim repellat quidem magnam,
+                laborum alias ipsam iure hic ipsum necessitatibus maxime earum corporis? Atque perspiciatis sequi
+                expedita ducimus impedit velit repellendus in!
+                Ratione eaque obcaecati facilis possimus eveniet repellat dolorum pariatur quaerat necessitatibus cumque
+                impedit ullam, iusto excepturi reprehenderit qui amet veniam nobis modi dolor ex, delectus natus.
+                Doloremque in eaque aliquam!</p>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

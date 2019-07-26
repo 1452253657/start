@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .door{
+        width: 450px;
+        height: 300px;
+        margin:200px auto;
+        border:1px solid red;
+        background: url('../images/bg4.jpg');
+        position: relative;
+        perspective: 1000px;
+    }
+    .door1,.door2{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background: url('../images/777.png');
+        top:0;
+        transition: all 2s;
+
+    }
+    .door1::before,.door2::before{
+        content:"";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border:1px solid black;
+        /* background: #000; */
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        margin-top:-10px;
+    }
+    .door1::before{
+      right: 5px;
+    }
+    .door2::before{
+       left: 5px;
+    }
+    .door1{
+        left:0;
+        transform-origin:left;
+
+    }
+    .door2{
+        right:0;
+        transform-origin:right;
+    }
+    .door:hover .door1{
+        transform:rotateY(-130deg);
+
+    }
+    .door:hover .door2{
+        transform:rotateY(130deg);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="door">
+        <div class="door1"></div>
+        <div class="door2"></div>
+        
+    </div>
+</body>
+</html>
